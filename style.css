@@ -96,15 +96,27 @@ h1, h2, h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 0;
+  padding: 12px 0;
 }
 
+/* AJUSTE E FORMATAÇÃO DA LOGO DA MARCA */
 .logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
   font-size: 1.5rem;
   font-family: var(--font-title);
   font-weight: 800;
   color: var(--primary);
   text-decoration: none;
+}
+
+.logo-img {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--primary);
 }
 
 .logo span {
@@ -748,4 +760,3 @@ h1, h2, h3 {
     right: -8px;
   }
 }
-
