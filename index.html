@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fabio Beach Bar & Restaurante | Frutos do Mar e Comida Típica</title>
-  <meta name="description" content="O melhor do mar e do Nordeste em Manaíra e Bessa, João Pessoa. Rubacão, Peixe Empanado, Ensopado de Camarão e cerveja trincando!">
+  <meta name="description" content="O melhor do mar e do Nordeste em Manaíra e Bessa, João Pessoa. Rubacão, Caranguejo, Petiscos, Hambúrgueres, Drinks em Dobro no Happy Hour e cerveja trincando!">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,7 +12,7 @@
 </head>
 <body>
 
-  <!-- HEADER -->
+  <!-- HEADER / NAVEGAÇÃO -->
   <header class="header">
     <div class="container header-container">
       <a href="#" class="logo">Fabio <span>Beach</span></a>
@@ -26,6 +26,7 @@
       <nav class="nav-menu" id="navMenu">
         <ul>
           <li><a href="#hero" class="nav-link">Início</a></li>
+          <li><a href="#happy-hour" class="nav-link">Happy Hour</a></li>
           <li><a href="#destaques" class="nav-link">Especialidades</a></li>
           <li><a href="#sobre" class="nav-link">Sobre Nós</a></li>
           <li><a href="#depoimentos" class="nav-link">Avaliações</a></li>
@@ -35,13 +36,21 @@
     </div>
   </header>
 
-  <!-- HERO SECTION -->
+  <!-- HERO SECTION COM VÍDEO EM LOOP -->
   <section id="hero" class="hero">
+    <!-- Vídeo em loop de fundo -->
+    <video autoplay loop muted playsinline class="hero-video">
+      <source src="imagem/video-hero.mp4" type="video/mp4">
+      Seu navegador não suporta vídeos em HTML5.
+    </video>
+
+    <!-- Camada escura para dar contraste e legibilidade ao texto -->
     <div class="overlay"></div>
+
     <div class="container hero-content">
       <span class="badge">📍 Unidades em Manaíra & Bessa</span>
       <h1>Frutos do Mar Frescos & Comida Típica Nordestina</h1>
-      <p>Do famoso Rubacão ao saboroso Ensopado de Camarão. Cerveja trincando e música ao vivo para você e sua família.</p>
+      <p>Do famoso Rubacão, Caranguejo e Burguer Beach ao Happy Hour com Drinks em Dobro. Cerveja trincando e o melhor ambiente da orla!</p>
       <div class="hero-btns">
         <a href="#reserva" class="btn btn-primary">Garantir Sua Mesa</a>
         <a href="https://api.whatsapp.com/send?phone=5583999718429&text=Ol%C3%A1!%20Gostaria%20de%20ver%20o%20card%C3%A1pio%20do%20Fabio%20Beach%20Bar!" target="_blank" class="btn btn-whatsapp">
@@ -51,44 +60,147 @@
     </div>
   </section>
 
-  <!-- DESTAQUES / CARDÁPIO -->
-  <section id="destaques" class="section">
+  <!-- SEÇÃO HAPPY HOUR -->
+  <section id="happy-hour" class="happy-hour-section">
     <div class="container">
-      <h2 class="section-title">Especialidades da Casa</h2>
-      <p class="section-subtitle">Os pratos mais amados pelos nossos clientes e frequentadores locais</p>
+      <div class="happy-hour-card">
+        <div class="happy-hour-content">
+          <span class="badge-promo">Segunda a Sábado • 17h às 21h</span>
+          <h2>Happy Hour <span>Fabio Beach</span></h2>
+          <p class="highlight-text">🍹 <strong>TODOS OS DRINKS EM DOBRO!</strong></p>
+          <p>Aproveite nossos petiscos selecionados, cervejas geladas e os melhores coquetéis da orla nas nossas unidades.</p>
+          
+          <ul class="hh-list">
+            <li><strong>Petiscos:</strong> Pastéis, Panceta, Filé com Fritas, Picanha Trinchada e Tripa Crocante</li>
+            <li><strong>Bebidas:</strong> Cervejas geladas a partir de R$ 9,90 e Cachaça Volúpia por R$ 12,90</li>
+          </ul>
 
-      <div class="cards-grid">
-        <article class="card">
-          <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=600&q=80');"></div>
-          <div class="card-body">
-            <h3>Ensopado de Camarão</h3>
-            <p>Camarões selecionados ao molho cremoso da casa, servidos com pirão e arroz fresquinho.</p>
-            <span class="price">Sabor Autêntico</span>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=600&q=80');"></div>
-          <div class="card-body">
-            <h3>Rubacão Nordestino</h3>
-            <p>A tradicional mistura paraibana rica em tempero, queijo coalho e carnes nobres.</p>
-            <span class="price">O Mais Pedido!</span>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=600&q=80');"></div>
-          <div class="card-body">
-            <h3>Peixe Empanado Crocante</h3>
-            <p>Postas de peixe crocantes por fora e macias por dentro, acompanhadas de arroz, pirão e fritas.</p>
-            <span class="price">Especialidade da Orla</span>
-          </div>
-        </article>
+          <a href="#reserva" class="btn-hh">Reservar Mesa para o Happy Hour</a>
+        </div>
+        <div class="happy-hour-image">
+          <img src="imagem/happy-hour.jpg" alt="Flyer do Happy Hour Fabio Beach">
+        </div>
       </div>
     </div>
   </section>
 
- <!-- SOBRE NÓS, HORÁRIOS E MAPA DINÂMICO -->
+  <!-- DESTAQUES / ESPECIALIDADES DA CASA (CARROSSEL) -->
+  <section id="destaques" class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2 class="section-title">Especialidades da Casa</h2>
+        <p class="section-subtitle">Os pratos, petiscos, hambúrgueres e bebidas mais amados pelos nossos clientes</p>
+      </div>
+
+      <!-- ESTRUTURA DO CARROSSEL COM SETAS -->
+      <div class="carousel-container">
+        <button class="carousel-btn prev" id="slideLeft" aria-label="Anterior">❮</button>
+
+        <div class="galeria-grid" id="galeriaGrid">
+          
+          <!-- 1. Rubacão Tradicional -->
+          <article class="card-prato">
+            <div class="card-img">
+              <img src="imagem/rubacao.jpg" alt="Rubacão Tradicional Fabio Beach">
+              <span class="card-tag">O Melhor da Cidade</span>
+            </div>
+            <div class="card-info">
+              <h3>Rubacão Tradicional</h3>
+              <p>Rico em tempero, queijo coalho e carnes selecionadas. O prato mais pedido da casa!</p>
+            </div>
+          </article>
+
+          <!-- 2. Caranguejo Especial -->
+          <article class="card-prato">
+            <div class="card-img">
+              <img src="imagem/carangueijo.jpg" alt="Caranguejo ao Molho">
+              <span class="card-tag">Especialidade</span>
+            </div>
+            <div class="card-info">
+              <h3>Caranguejo Especial</h3>
+              <p>Siriri temperado no molho especial da casa com aquele toque praiano irresistível.</p>
+            </div>
+          </article>
+
+          <!-- 3. Carnes & Acompanhamentos -->
+          <article class="card-prato">
+            <div class="card-img">
+              <img src="imagem/carne de sol.jpg" alt="Carne na Chapa com Acompanhamentos">
+            </div>
+            <div class="card-info">
+              <h3>Carnes & Acompanhamentos</h3>
+              <p>Cortes nobres servidos com batata frita, vinagrete, farofa, arroz e feijão verde fresquinho.</p>
+            </div>
+          </article>
+
+          <!-- 4. Drinks Tropicais -->
+          <article class="card-prato">
+            <div class="card-img">
+              <img src="imagem/drink-1.jpg" alt="Drinks Tropicais Fabio Beach">
+              <span class="card-tag tag-promo">Em Dobro no HH</span>
+            </div>
+            <div class="card-info">
+              <h3>Drinks Tropicais</h3>
+              <p>Coquetéis exclusivos, caipirinhas com frutas frescas e bebidas para refrescar seu dia.</p>
+            </div>
+          </article>
+
+          <!-- 5. Parmegianas (Frango e Filé) -->
+          <article class="card-prato">
+            <div class="card-img">
+              <img src="imagem/parmegiana.jpg" alt="Parmegianas de Frango e Filé Fabio Beach">
+              <span class="card-tag">Favorito da Casa</span>
+            </div>
+            <div class="card-info">
+              <h3>Parmegianas (Frango e Filé)</h3>
+              <p>Os melhores parmegianas da orla! Molho artesanal, muito queijo derretido e acompanhamentos caprichados.</p>
+            </div>
+          </article>
+
+          <!-- 6. Petiscos Variados -->
+          <article class="card-prato">
+            <div class="card-img">
+              <img src="imagem/peticos.jpg" alt="Os Melhores Petiscos Fabio Beach">
+              <span class="card-tag">Os Melhores</span>
+            </div>
+            <div class="card-info">
+              <h3>Petiscos Variados</h3>
+              <p>Salgados crocantes, coxilhas e porções especiais preparadas com todo carinho para acompanhar a cerveja trincando.</p>
+            </div>
+          </article>
+
+          <!-- 7. Burguer Beach -->
+          <article class="card-prato">
+            <div class="card-img">
+              <img src="imagem/burger beach.jpg" alt="Burguer Beach com Batatas Fritas">
+              <span class="card-tag tag-promo">Sucesso da Casa</span>
+            </div>
+            <div class="card-info">
+              <h3>Burguer Beach</h3>
+              <p>Hambúrgueres artesanais suculentos servidos com queijo derretido, salada fresca e batatas fritas crocantes.</p>
+            </div>
+          </article>
+
+          <!-- 8. Caldinhos Tradicionais -->
+          <article class="card-prato">
+            <div class="card-img">
+              <img src="imagem/caldinhos.jpg" alt="Caldinhos Tradicionais Fabio Beach">
+              <span class="card-tag">Para Acompanhar</span>
+            </div>
+            <div class="card-info">
+              <h3>Caldinhos Tradicionais</h3>
+              <p>Um sabor que aquece e conquista! O acompanhamento perfeito para a sua cerveja gelada.</p>
+            </div>
+          </article>
+
+        </div>
+
+        <button class="carousel-btn next" id="slideRight" aria-label="Próximo">❯</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE NÓS, HORÁRIOS E MAPA DINÂMICO -->
   <section id="sobre" class="section bg-light">
     <div class="container grid-2">
       <div class="about-text">
@@ -102,10 +214,9 @@
           <li><strong>🎵 Atração:</strong> Música ao vivo todas as sextas e sábados</li>
         </ul>
 
-        <!-- Botão do Instagram estilizado -->
         <div class="insta-cta">
-          <a href="https://www.instagram.com/fabiobeach_/" target="_blank" class="btn btn-insta">
-            <i class="fa-brands fa-instagram"></i>
+          <a href="https://www.instagram.com/fabiobeach_/" target="_blank" class="btn btn-insta" aria-label="Acesse nosso Instagram">
+            <i class="fa-brands fa-instagram"></i> Siga no Instagram
           </a>
         </div>
       </div>
@@ -195,7 +306,7 @@
 
           <div class="form-group">
             <label for="mensagem">Data, Horário ou Observação</label>
-            <textarea id="mensagem" name="Mensagem" rows="3" placeholder="Ex: Hoje às 20h na área externa"></textarea>
+            <textarea id="mensagem" name="Mensagem" rows="3" placeholder="Ex: Hoje às 18h para o Happy Hour"></textarea>
           </div>
 
           <button type="submit" class="btn btn-primary btn-block">Confirmar Reserva no WhatsApp 📲</button>
@@ -209,6 +320,7 @@
     <div class="container footer-content">
       <p>&copy; 2026 Fabio Beach Bar e Restaurante. Todos os direitos reservados.</p>
       <p>Bessa & Manaíra - João Pessoa / PB</p>
+      <p class="demo-notice"><small>Protótipo desenvolvido exclusivamente para apresentação comercial ao Fabio Beach Bar.</small></p>
     </div>
   </footer>
 

@@ -132,4 +132,27 @@ document.addEventListener("DOMContentLoaded", () => {
       mapIframe.src = mapUrls.bessa;
     });
   }
+
+  // 5. NAVEGAÇÃO DO CARROSSEL DE ESPECIALIDADES
+  const galeriaGrid = document.querySelector(".galeria-grid");
+  const prevBtn = document.querySelector(".carousel-btn.prev");
+  const nextBtn = document.querySelector(".carousel-btn.next");
+
+  if (galeriaGrid && prevBtn && nextBtn) {
+    const scrollAmount = 300; // Distância do scroll a cada clique
+
+    prevBtn.addEventListener("click", () => {
+      galeriaGrid.scrollBy({
+        left: -scrollAmount,
+        behavior: "smooth",
+      });
+    });
+
+    nextBtn.addEventListener("click", () => {
+      galeriaGrid.scrollBy({
+        left: scrollAmount,
+        behavior: "smooth",
+      });
+    });
+  }
 });
