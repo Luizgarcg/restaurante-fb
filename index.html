@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fabio Beach Bar & Restaurante | Frutos do Mar e Comida Típica</title>
-  <meta name="description" content="O melhor do mar e do Nordeste em Manaíra e Bessa, João Pessoa. Rubacão, Caranguejo, Petiscos, Hambúrgueres, Drinks em Dobro no Happy Hour e cerveja trincando!">
+  <title>Nome do Estabelecimento | Bar & Restaurante</title>
+  <meta name="description" content="Descrição genérica do seu estabelecimento. Adicione aqui as especialidades do seu cardápio e diferenciais da casa.">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,8 +16,8 @@
   <header class="header">
     <div class="container header-container">
       <a href="#" class="logo">
-        <img src="imagem/fabio-beach.jpg" alt="Logo Fabio Beach Bar" class="logo-img">
-        Fabio <span>Beach</span>
+        <img src="imagem/logo.png" alt="Logo" class="logo-img">
+        Nome<span>DoBar</span>
       </a>
       
       <button class="menu-toggle" id="menuToggle" aria-label="Abrir Menu">
@@ -39,24 +39,22 @@
     </div>
   </header>
 
-  <!-- HERO SECTION COM VÍDEO EM LOOP -->
+  <!-- HERO SECTION -->
   <section id="hero" class="hero">
-    <!-- Vídeo em loop de fundo -->
     <video autoplay loop muted playsinline class="hero-video">
-      <source src="imagem/video-hero.mp4" type="video/mp4">
+      <source src="video.mp4" type="video/mp4">
       Seu navegador não suporta vídeos em HTML5.
     </video>
 
-    <!-- Camada escura para dar contraste e legibilidade ao texto -->
     <div class="overlay"></div>
 
     <div class="container hero-content">
-      <span class="badge">📍 Unidades em Manaíra & Bessa</span>
-      <h1>Frutos do Mar Frescos & Comida Típica Nordestina</h1>
-      <p>Do famoso Rubacão, Caranguejo e Burguer Beach ao Happy Hour com Drinks em Dobro. Cerveja trincando e o melhor ambiente da orla!</p>
+      <span class="badge">📍 Unidades 1 & 2</span>
+      <h1>Título Principal do Seu Estabelecimento</h1>
+      <p>Subtítulo descritivo da sua casa, pratos principais, bebidas e diferenciais do ambiente.</p>
       <div class="hero-btns">
         <a href="#reserva" class="btn btn-primary">Garantir Sua Mesa</a>
-        <a href="https://api.whatsapp.com/send?phone=5583999718429&text=Ol%C3%A1!%20Gostaria%20de%20ver%20o%20card%C3%A1pio%20do%20Fabio%20Beach%20Bar!" target="_blank" class="btn btn-whatsapp">
+        <a href="https://api.whatsapp.com/send?phone=5500000000000&text=Ol%C3%A1!%20Gostaria%20de%20ver%20o%20card%C3%A1pio!" target="_blank" class="btn btn-whatsapp">
           📲 Cardápio no WhatsApp
         </a>
       </div>
@@ -68,134 +66,79 @@
     <div class="container">
       <div class="happy-hour-card">
         <div class="happy-hour-content">
-          <span class="badge-promo">Segunda a Sábado • 17h às 21h</span>
-          <h2>Happy Hour <span>Fabio Beach</span></h2>
-          <p class="highlight-text">🍹 <strong>TODOS OS DRINKS EM DOBRO!</strong></p>
-          <p>Aproveite nossos petiscos selecionados, cervejas geladas e os melhores coquetéis da orla nas nossas unidades.</p>
+          <span class="badge-promo">Dias da Promoção • Horário</span>
+          <h2>Happy Hour <span>Especial</span></h2>
+          <p class="highlight-text">🍹 <strong>DRINKS EM DOBRO!</strong></p>
+          <p>Aproveite nossos petiscos selecionados, bebidas geladas e coquetéis exclusivos.</p>
           
           <ul class="hh-list">
-            <li><strong>Petiscos:</strong> Pastéis, Panceta, Filé com Fritas, Picanha Trinchada e Tripa Crocante</li>
-            <li><strong>Bebidas:</strong> Cervejas geladas a partir de R$ 9,90 e Cachaça Volúpia por R$ 12,90</li>
+            <li><strong>Petiscos:</strong> Opção 1, Opção 2, Opção 3 e Opção 4</li>
+            <li><strong>Bebidas:</strong> Chopp e Cervejas a partir de R$ 00,00</li>
           </ul>
 
-          <a href="#reserva" class="btn-hh">Reservar Mesa para o Happy Hour</a>
+          <a href="#reserva" class="btn-hh">Reservar Mesa</a>
         </div>
         <div class="happy-hour-image">
-          <img src="imagem/happy-hour.jpg" alt="Flyer do Happy Hour Fabio Beach">
+          <img src="imagem/" alt="Happy Hour">
         </div>
       </div>
     </div>
   </section>
 
-  <!-- DESTAQUES / ESPECIALIDADES DA CASA (CARROSSEL) -->
+  <!-- DESTAQUES (CARROSSEL) -->
   <section id="destaques" class="section">
     <div class="container">
       <div class="section-title">
-        <h2 class="section-title">Especialidades da Casa</h2>
-        <p class="section-subtitle">Os pratos, petiscos, hambúrgueres e bebidas mais amados pelos nossos clientes</p>
+        <h2>Especialidades da Casa</h2>
+        <p class="section-subtitle">Os pratos e bebidas mais pedidos do nosso cardápio</p>
       </div>
 
-      <!-- ESTRUTURA DO CARROSSEL COM SETAS -->
       <div class="carousel-container">
         <button class="carousel-btn prev" id="slideLeft" aria-label="Anterior">❮</button>
 
         <div class="galeria-grid" id="galeriaGrid">
-          
-          <!-- 1. Rubacão Tradicional -->
           <article class="card-prato">
             <div class="card-img">
-              <img src="imagem/rubacao.jpg" alt="Rubacão Tradicional Fabio Beach">
-              <span class="card-tag">O Melhor da Cidade</span>
+              <img src="imagem/prato1.jpg" alt="Prato 1">
+              <span class="card-tag">Mais Pedido</span>
             </div>
             <div class="card-info">
-              <h3>Rubacão Tradicional</h3>
-              <p>Rico em tempero, queijo coalho e carnes selecionadas. O prato mais pedido da casa!</p>
+              <h3>Prato Especial 1</h3>
+              <p>Descrição dos ingredientes e modo de preparo deste prato especial.</p>
             </div>
           </article>
 
-          <!-- 2. Caranguejo Especial -->
           <article class="card-prato">
             <div class="card-img">
-              <img src="imagem/carangueijo.jpg" alt="Caranguejo ao Molho">
+              <img src="imagem/prato2.jpg" alt="Prato 2">
               <span class="card-tag">Especialidade</span>
             </div>
             <div class="card-info">
-              <h3>Caranguejo Especial</h3>
-              <p>Siriri temperado no molho especial da casa com aquele toque praiano irresistível.</p>
+              <h3>Prato Especial 2</h3>
+              <p>Descrição dos ingredientes e modo de preparo deste prato especial.</p>
             </div>
           </article>
 
-          <!-- 3. Carnes & Acompanhamentos -->
           <article class="card-prato">
             <div class="card-img">
-              <img src="imagem/carne de sol.jpg" alt="Carne na Chapa com Acompanhamentos">
+              <img src="imagem/prato3.jpg" alt="Prato 3">
             </div>
             <div class="card-info">
-              <h3>Carnes & Acompanhamentos</h3>
-              <p>Cortes nobres servidos com batata frita, vinagrete, farofa, arroz e feijão verde fresquinho.</p>
+              <h3>Prato Especial 3</h3>
+              <p>Descrição dos ingredientes e modo de preparo deste prato especial.</p>
             </div>
           </article>
 
-          <!-- 4. Drinks Tropicais -->
           <article class="card-prato">
             <div class="card-img">
-              <img src="imagem/drink-1.jpg" alt="Drinks Tropicais Fabio Beach">
-              <span class="card-tag tag-promo">Em Dobro no HH</span>
+              <img src="imagem/prato4.jpg" alt="Drink 1">
+              <span class="card-tag tag-promo">Promoção</span>
             </div>
             <div class="card-info">
-              <h3>Drinks Tropicais</h3>
-              <p>Coquetéis exclusivos, caipirinhas com frutas frescas e bebidas para refrescar seu dia.</p>
+              <h3>Drink da Casa</h3>
+              <p>Descrição dos ingredientes do drink ou coquetel.</p>
             </div>
           </article>
-
-          <!-- 5. Parmegianas (Frango e Filé) -->
-          <article class="card-prato">
-            <div class="card-img">
-              <img src="imagem/parmegiana.jpg" alt="Parmegianas de Frango e Filé Fabio Beach">
-              <span class="card-tag">Favorito da Casa</span>
-            </div>
-            <div class="card-info">
-              <h3>Parmegianas (Frango e Filé)</h3>
-              <p>Os melhores parmegianas da orla! Molho artesanal, muito queijo derretido e acompanhamentos caprichados.</p>
-            </div>
-          </article>
-
-          <!-- 6. Petiscos Variados -->
-          <article class="card-prato">
-            <div class="card-img">
-              <img src="imagem/peticos.jpg" alt="Os Melhores Petiscos Fabio Beach">
-              <span class="card-tag">Os Melhores</span>
-            </div>
-            <div class="card-info">
-              <h3>Petiscos Variados</h3>
-              <p>Salgados crocantes, coxilhas e porções especiais preparadas com todo carinho para acompanhar a cerveja trincando.</p>
-            </div>
-          </article>
-
-          <!-- 7. Burguer Beach -->
-          <article class="card-prato">
-            <div class="card-img">
-              <img src="imagem/burger beach.jpg" alt="Burguer Beach com Batatas Fritas">
-              <span class="card-tag tag-promo">Sucesso da Casa</span>
-            </div>
-            <div class="card-info">
-              <h3>Burguer Beach</h3>
-              <p>Hambúrgueres artesanais suculentos servidos com queijo derretido, salada fresca e batatas fritas crocantes.</p>
-            </div>
-          </article>
-
-          <!-- 8. Caldinhos Tradicionais -->
-          <article class="card-prato">
-            <div class="card-img">
-              <img src="imagem/caldinhos.jpg" alt="Caldinhos Tradicionais Fabio Beach">
-              <span class="card-tag">Para Acompanhar</span>
-            </div>
-            <div class="card-info">
-              <h3>Caldinhos Tradicionais</h3>
-              <p>Um sabor que aquece e conquista! O acompanhamento perfeito para a sua cerveja gelada.</p>
-            </div>
-          </article>
-
         </div>
 
         <button class="carousel-btn next" id="slideRight" aria-label="Próximo">❯</button>
@@ -203,38 +146,37 @@
     </div>
   </section>
 
-  <!-- SOBRE NÓS, HORÁRIOS E MAPA DINÂMICO -->
+  <!-- SOBRE NÓS E MAPA -->
   <section id="sobre" class="section bg-light">
     <div class="container grid-2">
       <div class="about-text">
-        <h2>Fabio Beach Bar & Restaurante</h2>
-        <p>Onde o sabor encontra os melhores momentos. Oferecemos uma experiência gastronômica autêntica com pratos fartos, bebidas trincando de geladas e um ambiente único na orla de João Pessoa.</p>
+        <h2>Sobre o Nosso Estabelecimento</h2>
+        <p>Apresentação do local, história da marca, conceito gastronômico e atmosfera oferecida aos clientes.</p>
         
         <ul class="info-list">
-          <li><strong>📍 Manaíra:</strong> Av. Esperança, 1048 - João Pessoa - PB</li>
-          <li><strong>📍 Bessa:</strong> Rua Randal Cavalcante Pimentel, 40 - João Pessoa - PB</li>
-          <li><strong>⏰ Horário:</strong> Aberto todos os dias das 09h às 00h</li>
-          <li><strong>🎵 Atração:</strong> Música ao vivo todas as sextas e sábados</li>
+          <li id="end-unidades"><strong>📍 Localização:</strong> Endereço da Unidade 1 e Unidade 2</li>
+          <li><strong>⏰ Horário:</strong> Aberto de Terça a Domingo a partir das 17h</li>
+          <li><strong>🎵 Atração:</strong> Programação cultural ou musical nos finais de semana</li>
         </ul>
 
         <div class="insta-cta">
-          <a href="https://www.instagram.com/fabiobeach_/" target="_blank" class="btn btn-insta" aria-label="Acesse nosso Instagram">
-            <i class="fa-brands fa-instagram"></i> Siga no Instagram
+          <a href="https://instagram.com" target="_blank" class="btn btn-insta" aria-label="Acesse nosso Instagram">
+            Siga no Instagram
           </a>
         </div>
       </div>
 
-      <!-- MAPA INTERATIVO COM BOTÕES DE UNIDADE -->
+      <!-- MAPA INTERATIVO -->
       <div class="map-wrapper">
         <div class="map-toggle-btns">
-          <button class="map-btn active" id="btn-manaira">📍 Manaíra</button>
-          <button class="map-btn" id="btn-bessa">📍 Bessa</button>
+          <button class="map-btn active" id="btn-unidade1" type="button">📍 Unidade 1</button>
+          <button class="map-btn" id="btn-unidade2" type="button">📍 Unidade 2</button>
         </div>
 
         <div class="map-box">
           <iframe 
             id="mapIframe"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2354.157374875667!2d-34.83665813684384!3d-7.102224654035136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7acdd2d71215549%3A0x15558676f3b73bb5!2sFabio%20Beach%20Bar%20e%20Restaurante%20especialista%20em%20frutos%20do%20mar%20e%20comida%20t%C3%ADpica%20nordestina%20-%20Mana%C3%ADra!5e0!3m2!1spt-BR!2sbr!4v1788804214494!5m2!1spt-BR!2sbr" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.0000!2d-34.8000!3d-7.1000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z0LDRgNGC!5e0!3m2!1spt-BR!2sbr" 
             style="width: 100%; height: 280px; border: 0; border-radius: 0 0 12px 12px;" 
             allowfullscreen="" 
             loading="lazy" 
@@ -252,18 +194,18 @@
       <div class="cards-grid">
         <div class="testimonial-card">
           <div class="stars">⭐⭐⭐⭐⭐</div>
-          <p>"Cerveja trincando, filé com fritas top de linha, e pastelzim dos deuses. Só vir que é sucesso!"</p>
-          <strong>- Lucas Barroso</strong>
+          <p>"Atendimento excelente, comida saborosa e ambiente super agradável!"</p>
+          <strong>- Cliente 1</strong>
         </div>
         <div class="testimonial-card">
           <div class="stars">⭐⭐⭐⭐⭐</div>
-          <p>"Excelente sob todos os aspectos: cardápio, preço, ambiente e cortesia. O rubacão é muito bom!"</p>
-          <strong>- Tatiele Costa</strong>
+          <p>"Excelente sob todos os aspectos: cardápio variado e ótimos preços."</p>
+          <strong>- Cliente 2</strong>
         </div>
         <div class="testimonial-card">
           <div class="stars">⭐⭐⭐⭐⭐</div>
-          <p>"Ambiente super agradável, atendimento nota 1000. O peixe empanado acompanhado de pirão é imperdível."</p>
-          <strong>- Viajante sem Filtro</strong>
+          <p>"Ótima experiência! Recomendo as bebidas especiais e os petiscos."</p>
+          <strong>- Cliente 3</strong>
         </div>
       </div>
     </div>
@@ -274,26 +216,26 @@
     <div class="container">
       <div class="form-container">
         <h2>Garanta Sua Mesa</h2>
-        <p>Preencha os dados abaixo para enviar sua reserva direto para o WhatsApp do atendimento.</p>
+        <p>Preencha os dados abaixo para enviar sua solicitação direto para o WhatsApp.</p>
 
         <form id="contactForm">
           <div class="form-group">
             <label for="unidade">Unidade Desejada *</label>
             <select id="unidade" name="Unidade" required>
-              <option value="manaira">Unidade Manaíra</option>
-              <option value="bessa">Unidade Bessa</option>
+              <option value="Unidade 1">Unidade 1</option>
+              <option value="Unidade 2">Unidade 2</option>
             </select>
           </div>
 
           <div class="form-group">
             <label for="nome">Seu Nome *</label>
-            <input type="text" id="nome" name="Nome" placeholder="Ex: Maria Silva" required>
+            <input type="text" id="nome" name="Nome" placeholder="Ex: Nome Sobrenome" required>
             <span class="error-msg" id="error-nome"></span>
           </div>
 
           <div class="form-group">
             <label for="telefone">WhatsApp / Telefone *</label>
-            <input type="tel" id="telefone" name="Telefone" placeholder="(83) 99999-9999" required>
+            <input type="tel" id="telefone" name="Telefone" placeholder="(00) 00000-0000" required>
             <span class="error-msg" id="error-telefone"></span>
           </div>
 
@@ -309,7 +251,7 @@
 
           <div class="form-group">
             <label for="mensagem">Data, Horário ou Observação</label>
-            <textarea id="mensagem" name="Mensagem" rows="3" placeholder="Ex: Hoje às 18h para o Happy Hour"></textarea>
+            <textarea id="mensagem" name="Mensagem" rows="3" placeholder="Ex: Hoje às 19h"></textarea>
           </div>
 
           <button type="submit" class="btn btn-primary btn-block">Confirmar Reserva no WhatsApp 📲</button>
@@ -321,18 +263,16 @@
   <!-- RODAPÉ -->
   <footer class="footer">
     <div class="container footer-content">
-      <p>&copy; 2026 Fabio Beach Bar e Restaurante. Todos os direitos reservados.</p>
-      <p>Bessa & Manaíra - João Pessoa / PB</p>
-      <p class="demo-notice"><small>Protótipo desenvolvido exclusivamente para apresentação comercial ao Fabio Beach Bar.</small></p>
+      <p>&copy; 2026 Nome do Estabelecimento. Todos os direitos reservados.</p>
+      <p>Cidade / Estado</p>
     </div>
   </footer>
 
-  <!-- BOTÃO FLUTUANTE DE WHATSAPP -->
-  <a href="https://api.whatsapp.com/send?phone=5583999718429&text=Ol%C3%A1!%20Gostaria%20de%20fazer%20uma%20reserva." class="whatsapp-float" target="_blank" aria-label="Falar no WhatsApp">
+  <!-- BOTÃO FLUTUANTE DO WHATSAPP -->
+  <a href="https://api.whatsapp.com/send?phone=5500000000000&text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es." class="whatsapp-float" target="_blank" aria-label="Falar no WhatsApp">
     💬
   </a>
 
   <script src="script.js"></script>
-  <script src="https://kit.fontawesome.com/0b65994e62.js" crossorigin="anonymous"></script>
 </body>
 </html>
